@@ -1,38 +1,61 @@
-.App {
+/* App.css */
+
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  display: block;
+  margin-bottom: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-input,
+.column-input,
+.search-button {
+  margin-bottom: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.column-input label,
+.search-button {
+  display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+.column-input {
+  margin-bottom: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+
+.loading-message {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: #888;
 }
